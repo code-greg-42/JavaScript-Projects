@@ -1,12 +1,11 @@
-// added randomizer
-
-const randomize = () => {
-    return Math.random() * 100;
-}
 
 // checks for height to be 52 or over, rolls once randomly if not
 const ride_function = () => {
     let height, can_ride;
+    // added randomizer function
+    const randomize = () => {
+        return Math.random() * 100;
+    }
     height = document.getElementById("Height").value;
     winked = height < 52 ? "*wink*": ""
     if (height < 52) {
