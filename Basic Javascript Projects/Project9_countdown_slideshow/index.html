@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>doggo-slideshow</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <!--basically a picture frame-->
+            <div id="slide-modal">
+                <div id="pic-frame">
+                    <img id="pic1" class="picture" src="./images/cooperstare.jpg" alt="a dog staring"/>
+                </div>
+                <!--buttons for controlling slideshow-->
+                <div id="buttons">
+                    <img id="rewind-btn" class="btn" onclick="last_photo()" src="./images/buttons/rewind-btn.png" alt="rew"/>
+                    <img id="ff-btn" class="btn" onclick="next_photo()" src="./images/buttons/ff-btn.png" alt="ff"/>
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
