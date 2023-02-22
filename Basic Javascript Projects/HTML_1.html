@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="./JavaScript/JavaScript_1.js"></script>
+    </head>
+    <body>
+        <p>Please select a personality trait which decides you best.</p>
+        <p>Based on your choice we will recommend a good dog breed for you!</p>
+        <select id="pers-select">
+            <option>Select Trait</option>
+            <option>Active</option>
+            <option>Laid Back</option>
+            <option>Goofy</option>
+            <option>Serious</option>
+        </select>
+        <button id="sub-btn" onclick="dog_breed_res()" type="submit">Submit</button>
+        <h2 id="result-title"></h2>
+        <img id="result-pic" display="none" width="360" src="" alt=""/>
+        <p id="result-writeup"></p>
+    </body>
+</html>
