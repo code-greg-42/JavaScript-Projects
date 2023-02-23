@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Robot-Run Pizza Shop</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width" name="viewport">
+        <script src="js/pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/pizza.css"/>
+    </head>
+    <body>
+        <div id="container">
+        <h1>Robot Run Pizza Shop</h1>
+        <div id="store-details">
+        <p>Absolutely no humans work here. RRPS has been open since 2026 and will likely remain open in perpituity.</p>
+        <p>We have carefully cultivated the scientifically proven best pizza on the planet. No humans needed.</p>
+        <br>
+        <hr>
+        <hr>
+        </div>
+        <div id="menuBG">
+            <form id="frmMenu">
+                <div class="menu left">
+                    <h3>Size</h3>
+                    <input class="size" type="radio" name="Size"
+                    value="Personal Pizza">Personal Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                    value="Medium Pizza">Medium Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                    value="Large Pizza" checked>Large Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                    value="XL Pizza">XL Pizza<br>
+                    <input class="size" type="radio" name="Size"
+                    value="XXL Pizza">XXL Pizza<br>
+                </div>
+
+                <div class="menu middle">
+                    <h3>Vegetables:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Spinach">Spinach<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Mushrooms">Mushrooms<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Onions">Onions<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Tomatoes">Tomatoes<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Sweet Peppers">Sweet Peppers<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Hot Peppers">Hot Peppers<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Pineapple">Pineapple<br>
+                </div>
+
+                <div class="menu right">
+                    <h3>Meats:</h3>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Pepperoni">Pepperoni<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Sausage">Sausage<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Canadian Bacon">Canadian Bacon<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Ground Beef">Ground Beef<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Anchovy">Anchovy<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Chicken">Chicken<br>
+                    <input class="toppings" type="checkbox" name="Topping"
+                    value="Ham">Ham<br>
+                </div>
+                <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
